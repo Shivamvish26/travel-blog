@@ -1,12 +1,26 @@
 import './App.css';
+import Navbar from './Components/NavBar/Navbar';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
+import Main from './Components/Pages/Main';
+import About from './Components/Pages/About';
+import Placetostay from './Components/Pages/Placetostay';
+import Thingtodo from './Components/Pages/Thingtodo';
+import Login from './Components/Pages/Login';
+import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h2>Hello World..!</h2>
-      <h5>Hello Kajal</h5>
-      </header>
+    <div >
+      <BrowserRouter>
+      <Navbar/>
+      <Routes>
+        <Route path='Main' element={<Main/>}/>
+        <Route path='About' element={<About/>}/>
+        <Route path='Placetostay' element={<Placetostay/>}/>
+        <Route path='Thingtodo' element={<Thingtodo/>}/>
+        <Route path='Login' element={<Login/>}/>
+      </Routes>
+      </BrowserRouter>
     </div>
   );
 }
