@@ -1,7 +1,7 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    background-image: url('../Assets/trekking.jpg');
+    background-image: url('../Assets/4K-Beach-Wallpaper-Free-Download.jpg');
     background-size: cover;
     background-position: center;
     padding: 11px 60px; 
@@ -49,12 +49,14 @@
 
 .logo-text h1 {
     margin: 0;
-    font-size: 5.5rem;
+    font-size: 4.5rem;
+    color: rgba(6, 10, 14, 0.5)
 }
 
 .logo-text h2 {
     margin: 0;
     font-size: 4rem; 
+    color: rgba(6, 10, 14, 0.5)
 }
 
 .centered-card {
