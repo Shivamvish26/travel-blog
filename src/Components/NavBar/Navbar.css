@@ -47,3 +47,27 @@
     width: 100%;
 }
 
+.logo-text h1 {
+    margin: 0;
+    font-size: 5.5rem;
+}
+
+.logo-text h2 {
+    margin: 0;
+    font-size: 4rem; 
+}
+
+.centered-card {
+    margin: 11px auto;
+    width: 170%;
+    background: transparent;
+    border: none;
+}
+
+.inputfields{
+    background: transparent;
+    height: 50px;
+    color: black;
+    border: none;
+    background-color: rgba(6, 10, 14, 0.5); 
+}

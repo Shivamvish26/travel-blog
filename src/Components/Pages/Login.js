@@ -6,7 +6,7 @@ import { Link } from "react-router-dom";
     return<div className="login-cover">
         <h1>Login Page</h1>
         <Link to="/Main">
-                <button>Go to Main Page</button>
+                <button>Login</button>
             </Link>
     </div>
 }
