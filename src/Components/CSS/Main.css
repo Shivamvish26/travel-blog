@@ -1,16 +1,34 @@
-.container{
-    margin-top: 5%;
+.container {
+  margin-top: 5%;
 }
 
-.textColor{
-    color: black;
-    font-size: xx-large;
+.textColor {
+  color: black;
+  font-size: xx-large;
 }
 
 .location-icon {
-    font-size: 1.5rem; 
-    vertical-align: middle; 
-    margin-left: 5px;
-    transform: rotate(45deg);
-    margin-top: -32px 
-  }
+  font-size: 1.5rem;
+  vertical-align: middle;
+  margin-left: 5px;
+  transform: rotate(45deg);
+  margin-top: -32px;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.section-gray {
+    background-color: #f0f0f0;
+    padding: 20px;
+    text-align: center;
+    margin-top: 26px;
+}
+
+h2{
+    margin-top: inherit;
+
+}
