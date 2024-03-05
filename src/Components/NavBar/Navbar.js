@@ -73,11 +73,11 @@ export default function Navbar() {
           </div>
         </div>
         <nav className="navbar">
-          <Link to="Main">Main</Link>
+          <Link to="/">Main</Link>
           <Link to="About">About</Link>
           <Link to="Thingtodo">Things to Do</Link>
           <Link to="Placetostay">Places to Stay</Link>
-          {/* <Link to='Login'>Login</Link> */}
+          <Link to='Login'>Login</Link>
         </nav>
       </div>
     </div>

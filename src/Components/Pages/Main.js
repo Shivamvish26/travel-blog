@@ -5,7 +5,7 @@ import { Row, Card, Col, Button } from "antd";
 import ganpatipule from "../Assets/Ganpatipule.jpg";
 import Alibag from "../Assets/ALIBAG3.jpg";
 import Harihareshwar from "../Assets/Harihareshwar-Beach-1024x601.webp";
-import beach from '../Assets/beach.webp'
+import beach from "../Assets/beach.webp";
 
 function Main() {
   return (
@@ -75,15 +75,17 @@ function Main() {
 
       <div className="section-gray">
         <h2>Additional Section</h2>
-        <Row gutter={[16, 16]} style={{marginTop: '30px'}}>
-          <Col span={12}>
-            <img src={beach} alt="example" style={{ width: "100%" }} />
-          </Col>
-          <Col span={12}>
-            <h2>Text on the right side</h2>
-            <p>This is the text on the right side.</p>
-          </Col>
-        </Row>
+        <div className="container">
+          <Row gutter={[16, 16]} style={{ marginTop: "30px" }}>
+            <Col span={12}>
+              <img src={beach} alt="example" style={{ width: "100%" }} />
+            </Col>
+            <Col span={12}>
+              <h2>Text on the right side</h2>
+              <p>This is the text on the right side.</p>
+            </Col>
+          </Row>
+        </div>
       </div>
     </div>
   );
