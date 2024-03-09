@@ -10,19 +10,22 @@ const { RangePicker } = DatePicker;
 
 export default function Navbar() {
   const [selectedDates, setSelectedDates] = useState([]);
+  const [place, setPlace] = useState("");
+  const [destination, setDestination] = useState("");
+  const [minPrice, setMinPrice] = useState("");
+  const [maxPrice, setMaxPrice] = useState("");
 
   const handleDateChange = (dates, dateStrings) => {
     setSelectedDates(dateStrings);
   };
-
-  const [place, setPlace] = useState("");
-  const [destination, setDestination] = useState("");
 
   const handleSearch = (e) => {
     e.preventDefault();
     console.log("Select Place is", place);
     console.log("Select Destination is", destination);
     console.log("Selected dates:", selectedDates);
+    console.log("Min price is:", minPrice);
+    console.log("Max price is:", maxPrice);
   };
 
   return (
@@ -30,54 +33,17 @@ export default function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <div className="logo-text">
-            <h1>Fall down seven times and </h1>
-            <h2>Stand up eight.</h2>
-          </div>
-          <div className="card-container">
-            <Card className="centered-card">
-              <Row gutter={[16, 16]}>
-                <Col span={8}>
-                  <Input
-                    className="inputfields"
-                    placeholder="Enter Place"
-                    value={place}
-                    onChange={(e) => setPlace(e.target.value)}
-                  />
-                </Col>
-                <Col span={8}>
-                  <Input
-                    className="inputfields"
-                    placeholder="Enter Destination"
-                    value={destination}
-                    onChange={(e) => setDestination(e.target.value)}
-                  />
-                </Col>
-                <Col span={6}>
-                  <RangePicker
-                    className="inputfields"
-                    onChange={handleDateChange}
-                  />
-                </Col>
-                <Col span={2}>
-                  <Button
-                    type="primary"
-                    className="inputfields"
-                    onClick={handleSearch}
-                  >
-                    Search
-                  </Button>
-                </Col>
-              </Row>
-            </Card>
-          </div>
+          <div class="home_text_large">discover</div>
+          <div class="home_text_small">Discover new worlds</div>
         </div>
         <nav className="navbar">
           <Link to="/">Main</Link>
           <Link to="About">About</Link>
           <Link to="Thingtodo">Things to Do</Link>
           <Link to="Placetostay">Places to Stay</Link>
-          <Link to='Login'>Login</Link>
+          <Link to="Login">Login</Link>
+          {/* New Link on the right-hand side */}
+          <Link to="Contact">Contact</Link>
         </nav>
       </div>
     </div>

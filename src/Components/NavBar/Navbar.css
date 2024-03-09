@@ -1,75 +1,72 @@
 .navbar-container {
-    display: flex;
-    justify-content: space-between;
-    background-image: url('../Assets/4K-Beach-Wallpaper-Free-Download.jpg');
-    background-size: cover;
-    background-position: center;
-    padding: 11px 60px; 
-    height: 600px;
+  display: flex;
+  justify-content: space-between;
+  background-image: url("../Assets/home.jpg.webp");
+  background-size: cover;
+  background-position: center;
+  padding: 11px 60px;
+  height: 737px;
+  position: relative;
+}
+
+.home_text_large {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 215px;
+  font-weight: 900;
+  color: #fdaa27;
+  opacity: 0.34;
+  text-transform: uppercase;
+  line-height: 0.75;
+}
+
+.home_text_small {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 72px;
+  font-weight: 400;
+  color: #ffffff;
+  text-shadow: 0px 11px 51px rgba(0, 0, 0, 0.35);
 }
 
 .logo img {
-    max-height: 150px; 
+  max-height: 150px;
 }
 
 .navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin: 60px 0 0 0;
-    margin-block-end: auto;
+  display: flex;
+  align-items: center;
 }
 
 .navbar a {
-    color: black; 
-    text-decoration: none; 
-    margin-left: 20px; 
-    font-size: 20px;
-    position: relative;
+  color: whitesmoke;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 20px;
+  position: relative;
+  top: -39%;
 }
 
-.navbar a:hover{
-    color: whitesmoke;
-    transition-duration: 0.5s;
+.navbar a:hover {
+  color: whitesmoke;
+  transition-duration: 0.5s;
 }
 
 .navbar a::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 0%;
-    height: 2px;
-    background-color: white; 
-    transition: width 0.5s ; 
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: white;
+  transition: width 0.5s;
 }
 
 .navbar a:hover::before {
-    width: 100%;
-}
-
-.logo-text h1 {
-    margin: 0;
-    font-size: 4.5rem;
-    color: rgba(6, 10, 14, 0.5)
-}
-
-.logo-text h2 {
-    margin: 0;
-    font-size: 4rem; 
-    color: rgba(6, 10, 14, 0.5)
-}
-
-.centered-card {
-    margin: 11px auto;
-    width: 170%;
-    background: transparent;
-    border: none;
-}
-
-.inputfields{
-    background: transparent;
-    height: 50px;
-    color: black;
-    border: none;
-    background-color: rgba(6, 10, 14, 0.5); 
+  width: 100%;
 }
