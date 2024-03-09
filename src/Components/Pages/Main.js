@@ -6,6 +6,7 @@ import ganpatipule from "../Assets/Ganpatipule.jpg";
 import Alibag from "../Assets/ALIBAG3.jpg";
 import Harihareshwar from "../Assets/Harihareshwar-Beach-1024x601.webp";
 import beach from "../Assets/beach.webp";
+import lastlogo from "../Assets/last_logo.png.webp";
 
 function Main() {
   return (
@@ -88,9 +89,12 @@ function Main() {
 
       <div className="section-gray">
         <div className="container">
+          <div class="last_logo">
+            <img src={lastlogo} />
+          </div>
           <Row gutter={[16, 16]} style={{ marginTop: "30px" }}>
             <Col span={12}>
-              <div class="last_item_content">
+              <div class="last_item_content" style={{ margin: "-40px 0" }}>
                 <div class="last_subtitle">GOA</div>
                 <div class="last_percent">50%</div>
                 <div class="last_title">Last Minute Offer</div>
@@ -120,6 +124,58 @@ function Main() {
               </div>
             </Col>
           </Row>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center">POPULAR DESITINATIONS IN 2020</h2>
+            <h4 className="text-center">TAKE A LOOK AT THE OFFERS</h4>
+          </div>
+          <div className="row mt-2">
+            <div className="col">
+              <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 2" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+          </div>
+          <div className="row mt-2">
+            <div className="col">
+              <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 2" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+            <div className="col">
+              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div className="section">
+        <div className="container">
+          <div className="row">
+            <h2 className="text-center">SPECIAL OFFERS</h2>
+            <h4 className="text-center">TAKE A LOOK AT THE OFFERS</h4>
+          </div>
         </div>
       </div>
     </div>
