@@ -41,9 +41,8 @@ export default function Navbar() {
           <Link to="About">About</Link>
           <Link to="Thingtodo">Things to Do</Link>
           <Link to="Placetostay">Places to Stay</Link>
+          <Link to="ContactUs">Contact</Link>
           <Link to="Login">Login</Link>
-          {/* New Link on the right-hand side */}
-          <Link to="Contact">Contact</Link>
         </nav>
       </div>
     </div>

@@ -7,6 +7,9 @@ import Alibag from "../Assets/ALIBAG3.jpg";
 import Harihareshwar from "../Assets/Harihareshwar-Beach-1024x601.webp";
 import beach from "../Assets/beach.webp";
 import lastlogo from "../Assets/last_logo.png.webp";
+import OwlCarousel from "react-owl-carousel";
+import "owl.carousel/dist/assets/owl.carousel.css";
+import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Main() {
   return (
@@ -130,41 +133,75 @@ function Main() {
       <div className="section">
         <div className="container">
           <div className="row">
-            <h2 className="text-center">POPULAR DESITINATIONS IN 2020</h2>
+            <h2 className="text-center">POPULAR DESTINATIONS IN 2020</h2>
             <h4 className="text-center">TAKE A LOOK AT THE OFFERS</h4>
           </div>
           <div className="row mt-2">
-            <div className="col">
-              <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 2" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
-            </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
           </div>
           <div className="row mt-2">
-            <div className="col">
-              <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 2" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
-            </div>
-            <div className="col">
-              <img src={Alibag} alt="Image 3" className="img-thumbnail" />
+            <div className="col-md-3">
+              <div className="img-container">
+                <img src={Alibag} alt="Image 1" className="img-thumbnail" />
+                <div className="overlay">
+                  <div className="text">Hello World</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -177,6 +214,36 @@ function Main() {
             <h4 className="text-center">TAKE A LOOK AT THE OFFERS</h4>
           </div>
         </div>
+        <OwlCarousel
+          items={4}
+          className="owl-theme mt-2"
+          loop
+          nav
+          margin={8}
+          autoplay
+        >
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+          <div>
+            <img className="img" src={Alibag} />
+          </div>
+        </OwlCarousel>
       </div>
     </div>
   );

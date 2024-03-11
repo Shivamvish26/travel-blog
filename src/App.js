@@ -6,6 +6,7 @@ import About from './Components/Pages/About';
 import Placetostay from './Components/Pages/Placetostay';
 import Thingtodo from './Components/Pages/Thingtodo';
 import Login from './Components/Pages/Login';
+import ContactUs from './Components/Pages/ContactUs';
 import { BrowserRouter, Route, Routes  } from 'react-router-dom';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <Route path='About' element={<About/>}/>
         <Route path='Placetostay' element={<Placetostay/>}/>
         <Route path='Thingtodo' element={<Thingtodo/>}/>
+        <Route path='ContactUs' element={<ContactUs/>}/>
         <Route path='Login' element={<Login/>}/>
       </Routes>
       </BrowserRouter>
