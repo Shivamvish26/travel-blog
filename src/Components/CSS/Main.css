@@ -136,3 +136,41 @@ h2 {
   height: 260px;
   width: 100%;
 }
+
+.sectionGray {
+  background-image: url("../Assets/newsletter.jpg.webp");
+  padding: 20px;
+  text-align: center;
+  margin-top: 26px;
+}
+
+.newsInfo{
+  color: antiquewhite;
+}
+
+.newsletterInfo{
+  /* margin: 50px; */
+  background: transparent;
+  /* border: solid purple; */
+  height: 56px;
+  width: 70%;
+  color: white;
+  border: solid 2px rgba(255, 255, 255, 0.5);
+  padding: 31px;
+  margin-top: 48px;
+}
+
+.newsletter_button {
+  width: 161px;
+  height: 66px;
+  vertical-align: top;
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: #fe364a;
+  color: #FFFFFF;
+  font-size: 16px;
+  font-weight: 500;
+  transition: all 200ms ease;
+  margin: 46px 20px;
+}

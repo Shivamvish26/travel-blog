@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "../CSS/Main.css";
 import { EnvironmentOutlined } from "@ant-design/icons";
 import { Row, Card, Col, Button } from "antd";
@@ -7,11 +7,19 @@ import Alibag from "../Assets/ALIBAG3.jpg";
 import Harihareshwar from "../Assets/Harihareshwar-Beach-1024x601.webp";
 import beach from "../Assets/beach.webp";
 import lastlogo from "../Assets/last_logo.png.webp";
-import OwlCarousel from "react-owl-carousel";
+import OwlCarousel from 'react-owl-carousel';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Main() {
+
+  const [email, setEmail] = useState('');
+
+  const handleemail =(e)=>{
+    e.preventDefault();
+    console.log(email)
+    email('');
+  }
   return (
     <div>
       <div className="container">
@@ -244,6 +252,24 @@ function Main() {
             <img className="img" src={Alibag} />
           </div>
         </OwlCarousel>
+      </div>
+
+      <div className="sectionGray">
+        <div className="container">
+          <div className="row">
+            <h3 className="text-center newsInfo">SUBSCRIBE TO OUR NEWSLETTER</h3>
+          </div>
+         <form onSubmit={handleemail}>
+         <input
+          type="email"
+          placeholder="Your Email Id"
+          className="newsletterInfo"
+          value={email}
+          onChange={(e)=>setEmail(e.target.value)}
+          />
+          <button type="submit" className="newsletter_button">Subscribe</button>
+         </form>
+        </div>
       </div>
     </div>
   );
