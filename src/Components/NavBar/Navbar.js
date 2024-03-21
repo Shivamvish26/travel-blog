@@ -42,7 +42,7 @@ export default function Navbar() {
           <Link to="Thingtodo">Things to Do</Link>
           <Link to="Placetostay">Places to Stay</Link>
           <Link to="ContactUs">Contact</Link>
-          <Link to="Login">Login</Link>
+          {/* <Link to="Login">Login</Link> */}
         </nav>
       </div>
     </div>

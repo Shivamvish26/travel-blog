@@ -105,7 +105,7 @@ function Main() {
           </div>
           <Row gutter={[16, 16]} style={{ marginTop: "30px" }}>
             <Col span={12}>
-              <div class="last_item_content" style={{ margin: "-40px 0" }}>
+              <div class="last_item_content" style={{ margin: "-39px 0" }}>
                 <div class="last_subtitle">GOA</div>
                 <div class="last_percent">50%</div>
                 <div class="last_title">Last Minute Offer</div>
@@ -120,7 +120,7 @@ function Main() {
               </div>
             </Col>
             <Col span={12}>
-              <div class="last_item_content">
+              <div class="last_item_content" style={{ margin: "-39px 0" }}>
                 <div class="last_subtitle">ANDAMAN AND NICOBAR ISLANDS</div>
                 <div class="last_percent">50%</div>
                 <div class="last_title">Last Minute Offer</div>
