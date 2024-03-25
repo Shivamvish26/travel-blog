@@ -139,7 +139,7 @@ h2 {
   width: 100%;
 }
 
-.sectionGray {
+/* .sectionGray {
   background-image: url("../Assets/newsletter.jpg.webp");
   padding: 20px;
   text-align: center;
@@ -151,9 +151,9 @@ h2 {
 }
 
 .newsletterInfo{
-  /* margin: 50px; */
+  margin: 50px;
   background: transparent;
-  /* border: solid purple; */
+  border: solid purple;
   height: 56px;
   width: 70%;
   color: white;
@@ -175,4 +175,4 @@ h2 {
   font-weight: 500;
   transition: all 200ms ease;
   margin: 46px 20px;
-}
+} */

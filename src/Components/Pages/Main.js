@@ -13,13 +13,13 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Main() {
 
-  const [email, setEmail] = useState('');
+  // const [email, setEmail] = useState('');
 
-  const handleemail =(e)=>{
-    e.preventDefault();
-    console.log(email)
-    email('');
-  }
+  // const handleemail =(e)=>{
+  //   e.preventDefault();
+  //   console.log(email)
+  //   setEmail('');
+  // }
   return (
     <div>
       <div className="container">
@@ -254,7 +254,7 @@ function Main() {
         </OwlCarousel>
       </div>
 
-      <div className="sectionGray">
+      {/* <div className="sectionGray">
         <div className="container">
           <div className="row">
             <h3 className="text-center newsInfo">SUBSCRIBE TO OUR NEWSLETTER</h3>
@@ -270,7 +270,7 @@ function Main() {
           <button type="submit" className="newsletter_button">Subscribe</button>
          </form>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }

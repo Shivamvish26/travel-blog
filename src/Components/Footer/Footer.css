@@ -1,4 +1,50 @@
-.footer{
-    background-color: #080d1d;
-    width: 100%;
+.footer {
+  background-color: #080d1d;
+  width: 100%;
+  margin-top: -5%;
+}
+
+.travelimg {
+  width: 128px;
+  height: 155px;
+  filter: invert(100%);
+  align-items: center;
+}
+
+.news-images {
+  display: flex;
+  flex-direction: column;
+}
+
+.news-images img {
+  max-width: 100px;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.news-images .image-with-text {
+  display: flex;
+  align-items: center;
+}
+
+.news-images .image-with-text img {
+  max-width: 100px;
+  height: auto;
+  margin-right: 10px;
+}
+
+.news-images .image-with-text .image-text {
+  color: #fff;
+}
+
+.tag {
+  background-color: #fe364a;
+  padding: 5px 10px;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  display: inline-block;
+  color: white;
+  font-size: 14px;
+  text-decoration: none;
 }

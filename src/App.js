@@ -9,6 +9,7 @@ import Login from "./Components/Pages/Login";
 import ContactUs from "./Components/Pages/ContactUs";
 import Footer from './Components/Footer/Footer'
 import CustomFooter from "./Components/Footer/Footer";
+import Subscribeletter from "./Components/Subscribe letter/Subscribeletter";
 import { BrowserRouter, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -24,7 +25,8 @@ function App() {
           <Route path="ContactUs" element={<ContactUs />} />
           <Route path="Login" element={<Login />} />
         </Routes>
-        {/* <CustomFooter/> */}
+        <Subscribeletter/>
+        <CustomFooter/>
       </BrowserRouter>
 
     </div>
