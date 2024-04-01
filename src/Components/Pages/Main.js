@@ -7,12 +7,11 @@ import Alibag from "../Assets/ALIBAG3.jpg";
 import Harihareshwar from "../Assets/Harihareshwar-Beach-1024x601.webp";
 import beach from "../Assets/beach.webp";
 import lastlogo from "../Assets/last_logo.png.webp";
-import OwlCarousel from 'react-owl-carousel';
+import OwlCarousel from "react-owl-carousel";
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 
 function Main() {
-
   // const [email, setEmail] = useState('');
 
   // const handleemail =(e)=>{
@@ -43,11 +42,24 @@ function Main() {
               <h6>Konkan, Maharashtra</h6>
               <div className="card-footer">
                 <h6>₹ 500/-</h6>
-                <div class="button last_button" style={{ margin: "0" }}>
-                  <a href="#" style={{ textAlign: "center" }}>
-                    Book
-                  </a>
-                </div>
+                <button className="animated-button">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                  <span className="text">Book</span>
+                  <span className="circle" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                </button>
               </div>
             </Card>
           </Col>
@@ -63,11 +75,24 @@ function Main() {
               <h6>Mumbai, Maharashtra </h6>
               <div className="card-footer">
                 <h6>₹ 500/-</h6>
-                <div class="button last_button" style={{ margin: "0" }}>
-                  <a href="#" style={{ textAlign: "center" }}>
-                    Book
-                  </a>
-                </div>
+                <button className="animated-button">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                  <span className="text">Book</span>
+                  <span className="circle" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                </button>
               </div>
             </Card>
           </Col>
@@ -87,11 +112,24 @@ function Main() {
               <h6>Raigad, Maharashtra </h6>
               <div className="card-footer">
                 <h6>₹ 500/-</h6>
-                <div class="button last_button" style={{ margin: "0" }}>
-                  <a href="#" style={{ textAlign: "center" }}>
-                    Book
-                  </a>
-                </div>
+                <button className="animated-button">
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-2"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                  <span className="text">Book</span>
+                  <span className="circle" />
+                  <svg
+                    viewBox="0 0 24 24"
+                    className="arr-1"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M16.1716 10.9999L10.8076 5.63589L12.2218 4.22168L20 11.9999L12.2218 19.778L10.8076 18.3638L16.1716 12.9999H4V10.9999H16.1716Z" />
+                  </svg>
+                </button>
               </div>
             </Card>
           </Col>
