@@ -1,0 +1,273 @@
+.heading {
+  /* text-align: justify; */
+  font-size: xxx-large;
+  font-weight: 600;
+  text-transform: capitalize;
+  line-height: 60px;
+  text-align: center;
+}
+
+.lady {
+  width: 69%;
+  border-radius: 213px 213px 0px 0px;
+  margin-top: 23px;
+  position: relative;
+}
+
+.camera {
+  width: 53%;
+  border-style: solid;
+  border-width: 15px;
+  border-color: #ffffff;
+  border-radius: 265px;
+  position: absolute;
+  animation: slideUp 2s ease forwards;
+  opacity: 0;
+  top: 418px;
+  left: 279px;
+}
+
+@keyframes slideUp {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.note {
+  color: #07090b;
+  font-family: "Rubik", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  text-align: justify;
+}
+
+.name {
+  color: #07090b;
+  font-family: "Rubik", Sans-serif;
+  font-size: 22px;
+  font-weight: 600;
+  line-height: 26px;
+}
+
+.text-head {
+  color: #07090b;
+  font-family: "Frank Ruhl Libre", Sans-serif;
+  font-size: 49px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 68px;
+}
+
+.notes {
+  color: #07090b;
+  font-family: "Rubik", Sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 26px;
+  padding: 0px 200px 0px 200px;
+}
+
+.number-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid lightcyan;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.number {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.numbers {
+  display: flex;
+  justify-content: space-around;
+}
+
+.number {
+  margin-right: 10px;
+  margin-left: 10px;
+}
+
+.number .counter {
+  font-weight: bold;
+  font-size: 1.9em;
+  margin: 14px 0;
+  text-align: center;
+}
+.number span {
+  font-size: 1.2em;
+  display: block;
+  text-align: center;
+}
+
+.line-text {
+  color: #07090b;
+  font-family: "Frank Ruhl Libre", Sans-serif;
+  font-size: 53px;
+  font-weight: 700;
+  text-transform: capitalize;
+  line-height: 68px;
+  text-align: center;
+  margin-top: 50px;
+}
+
+.card {
+  width: 12rem;
+  cursor: pointer;
+}
+
+.content {
+  text-align: center;
+  position: relative;
+  transition: all 2.25s;
+  /* background-color: rgb(127, 204, 240); */
+  padding: 5em;
+  transform-style: preserve-3d;
+}
+
+.card:hover .content {
+  transform: rotateY(0.5turn);
+}
+
+.front {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  padding: 1em;
+  transform-style: preserve-3d;
+  backface-visibility: hidden;
+}
+
+.title {
+  transform: translateZ(5rem);
+  font-size: 2rem;
+}
+
+.subtitle {
+  transform: translateZ(2rem);
+}
+
+.back {
+  transform: rotateY(0.5turn);
+  /* background-color: #009bff; */
+}
+
+.description {
+  transform: translateZ(3rem);
+}
+
+.card-image {
+  width: 100%;
+  height: 100%;
+}
+
+button {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  outline: none;
+  border: 0;
+  vertical-align: middle;
+  text-decoration: none;
+  background: transparent;
+  padding: 0;
+  font-size: inherit;
+  font-family: inherit;
+}
+
+button.learn-more {
+  width: 10rem;
+  height: auto;
+}
+
+button.learn-more .circle {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: relative;
+  display: block;
+  margin: 0;
+  width: 2rem;
+  height: 3rem;
+  background: #282936;
+  border-radius: 1.625rem;
+}
+
+button.learn-more .circle .icon {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background: #fff;
+}
+
+button.learn-more .circle .icon.arrow {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  left: -0.375rem;
+  width: 1.125rem;
+  height: 0.125rem;
+  background: none;
+}
+
+button.learn-more .circle .icon.arrow::before {
+  position: absolute;
+  content: "";
+  top: -0.29rem;
+  right: 0.0625rem;
+  width: 0.625rem;
+  height: 0.625rem;
+  border-top: 0.125rem solid #fff;
+  border-right: 0.125rem solid #fff;
+  transform: rotate(45deg);
+}
+
+button.learn-more .button-text {
+  transition: all 0.45s cubic-bezier(0.65, 0, 0.076, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  padding: 0.75rem 0;
+  margin: 0 0 0 1.85rem;
+  color: #282936;
+  font-weight: 700;
+  line-height: 1.6;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+button:hover .circle {
+  width: 100%;
+}
+
+button:hover .circle .icon.arrow {
+  background: #fff;
+  transform: translate(1rem, 0);
+}
+
+button:hover .button-text {
+  color: #fff;
+}
