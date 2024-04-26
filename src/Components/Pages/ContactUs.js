@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "../CSS/Contact.css";
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
+import { toast, ToastContainer } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 function ContactUs() {
   const [firstname, setFirstname] = useState("");
@@ -15,6 +17,7 @@ function ContactUs() {
     e.preventDefault();
     if (validateEmail(email) && validateContact(contact)) {
       console.log(firstname, lastname, email, contact, message);
+      toast.success("Form submitted successfully!");
       // Clear the form fields after submission
       setFirstname("");
       setLastname("");
@@ -38,14 +41,14 @@ function ContactUs() {
   };
 
   const validateEmail = (email) => {
-    const re =
-      /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    // Regex for email validation
+    const re = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
     return re.test(String(email).toLowerCase());
   };
 
   const validateContact = (contact) => {
-    const re =
-      /^[0-9]{10}$/;
+    // Regex for phone number validation
+    const re = /^[0-9]{10}$/;
     return re.test(String(contact));
   };
 
@@ -111,10 +114,13 @@ function ContactUs() {
                   type="email"
                   className="input"
                   value={email}
-                  onChange={(e) => setEmail(e.target.value)}
+                  onChange={(e) => {
+                    setEmail(e.target.value);
+                    setEmailError("");
+                  }}
                 />
               </label>
-              {emailError && <p className="error" style={{color:'red'}}>{emailError}</p>}
+              {emailError && <p className="error">{emailError}</p>}
               <label>
                 <input
                   required=""
@@ -122,10 +128,13 @@ function ContactUs() {
                   placeholder="Contact Number"
                   className="input"
                   value={contact}
-                  onChange={(e) => setContact(e.target.value)}
+                  onChange={(e) => {
+                    setContact(e.target.value);
+                    setContactError("");
+                  }}
                 />
               </label>
-              {contactError && <p className="error" style={{color:'red'}}>{contactError}</p>}
+              {contactError && <p className="error">{contactError}</p>}
               <label>
                 <textarea
                   required=""
@@ -146,6 +155,7 @@ function ContactUs() {
           </div>
         </div>
       </div>
+      <ToastContainer />
     </div>
   );
 }
