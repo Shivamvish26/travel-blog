@@ -33,8 +33,8 @@ export default function Navbar() {
       <div className="navbar-container">
         <div className="logo">
           <img src={logo} alt="Logo" />
-          <div class="home_text_large">discover</div>
-          <div class="home_text_small">Discover new worlds</div>
+          <div className="home_text_large">discover</div>
+          <div className="home_text_small">Discover new worlds</div>
         </div>
         <nav className="navbar">
           <Link to="/">Main</Link>

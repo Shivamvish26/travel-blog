@@ -57,29 +57,28 @@ function About() {
           </div>
         </div>
       </div>
-
+      
       <div className="section light-blue-bg">
-  <div className="container">
-    <h2 className="text center text-head" style={{ marginTop: "128px" }}>
-      Our Achievements
-    </h2>
-    <p className="text center notes">
-      This is a great site for everything around the home, and it also has a
-      useful You can see the best products in each category and they even to
-      back up he information they are giving you.
-    </p>
-    <div className="row">
-      <div className="numbers">
-        <Counter number={100} title="Posts" />
-        <Counter number={517} title="Followers" />
-        <Counter number={400} title="Following" />
+        <div className="container">
+          <h2 className="text center text-head" style={{ marginTop: "128px" }}>
+            Our Achievements
+          </h2>
+          <p className="text center notes">
+            This is a great site for everything around the home, and it also has
+            a useful You can see the best products in each category and they
+            even to back up he information they are giving you.
+          </p>
+          <div className="row">
+            <div className="numbers">
+              <Counter number={100} title="Posts" />
+              <Counter number={517} title="Followers" />
+              <Counter number={400} title="Following" />
+            </div>
+          </div>
+        </div>
       </div>
-    </div>
-  </div>
-</div>
 
-
-      <div className="container" style={{marginBottom:'3%'}}>
+      <div className="container" style={{ marginBottom: "3%" }}>
         <div className="row">
           <h2 className="line-text">
             I Think Your Favorite Destinations I’ll Show
@@ -93,11 +92,11 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Ganpatipule </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
@@ -111,11 +110,11 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Alibag </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
@@ -129,11 +128,11 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Harihareshwar </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
@@ -147,11 +146,11 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Gorakhpur </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
@@ -165,11 +164,11 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Lucknow </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
@@ -183,19 +182,17 @@ function About() {
                 </div>
                 <div className="back">
                   <p className="description">Basti </p>
-                  <button class="learn-more">
-                    <span class="circle" aria-hidden="true">
-                      <span class="icon arrow"></span>
+                  <button className="learn-more">
+                    <span className="circle" aria-hidden="true">
+                      <span className="icon arrow"></span>
                     </span>
-                    <span class="button-text">Know More</span>
+                    <span className="button-text">Know More</span>
                   </button>
                 </div>
               </div>
             </div>
           </div>
-          
         </div>
-        
       </div>
     </div>
   );
